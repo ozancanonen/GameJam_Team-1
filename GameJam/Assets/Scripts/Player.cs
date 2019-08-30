@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 
     public GameObject prefabParentObject;
     public GameObject bullet;
+    public GameObject lanterLight;
     public GameObject lanternObject;
     public GameObject bulletParticles;
     public GameObject deadParticles;
@@ -206,6 +207,7 @@ public class Player : MonoBehaviour
         {
             playerLanternHearth.GetComponent<Animator>().SetTrigger("Breake");
             Lantern();
+            lanterLight.SetActive(false);
             lanternObject.SetActive(false);
             lanternDurability = 0;
             lanternDurabilityBar.SetActive(true);
@@ -227,6 +229,7 @@ public class Player : MonoBehaviour
     {
         if (lanternOn)
         {
+                lanterLight.SetActive(false);
                 lanternObject.SetActive(false);
                 lanternOn = false;
         }
@@ -235,6 +238,7 @@ public class Player : MonoBehaviour
             if (lanternDurability >= 100)
             {
                 gm.audioManager.Play("LanternIgnite");
+                lanterLight.SetActive(true);
                 lanternObject.SetActive(true);
                 lanternOn = true;
             }

@@ -6542,6 +6542,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &496289427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2901980069103980593, guid: 6d1c5fba094987b43bf3deac85099769,
+    type: 3}
+  m_PrefabInstance: {fileID: 5937961515110134795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -25669,6 +25675,7 @@ MonoBehaviour:
   Skill2MovementInputButtons: Skill2Player2
   prefabParentObject: {fileID: 569408915}
   bullet: {fileID: 4781262221777038729, guid: 58a2bd76d0bc83a478144695ea6acab1, type: 3}
+  lanterLight: {fileID: 0}
   lanternObject: {fileID: 544127416}
   bulletParticles: {fileID: 998363604263136333, guid: c5c2ae41564936948830d18c71a176a9,
     type: 3}
@@ -25998,6 +26005,16 @@ PrefabInstance:
       propertyPath: lanternDurabilitySlider
       value: 
       objectReference: {fileID: 776727064}
+    - target: {fileID: 5937961516620328048, guid: 6d1c5fba094987b43bf3deac85099769,
+        type: 3}
+      propertyPath: lanterLight
+      value: 
+      objectReference: {fileID: 496289427}
+    - target: {fileID: 2901980069103980593, guid: 6d1c5fba094987b43bf3deac85099769,
+        type: 3}
+      propertyPath: m_Name
+      value: LanternLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d1c5fba094987b43bf3deac85099769, type: 3}
 --- !u!1001 &6126108098502212475
