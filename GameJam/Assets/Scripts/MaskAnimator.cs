@@ -42,18 +42,27 @@ public class MaskAnimator : MonoBehaviour
         {
             for (int i = 0; i < frames.Length; i++)
             {
-                gameObject.GetComponent<SpriteMask>().sprite = frames[i];
-                sync = i;
+                gameObject.GetComponent<SpriteMask>().sprite = frames[syncFrame(i)];
                 yield return new WaitForSeconds(fps);
             }
             yield return new WaitForSeconds(hold1);
             for (int i = frames.Length - 1; i > -1; i--)
             {
-                gameObject.GetComponent<SpriteMask>().sprite = frames[i];
-                sync = i;
+                gameObject.GetComponent<SpriteMask>().sprite = frames[syncFrame(i)];
                 yield return new WaitForSeconds(fps);
             }
             yield return new WaitForSeconds(hold2);
+        }
+    }
+
+    private int syncFrame(int currentInt)
+    {
+        if (thereIsASync)
+            return sync;
+        else
+        {
+            sync = currentInt;
+            return currentInt;
         }
     }
 
@@ -62,8 +71,7 @@ public class MaskAnimator : MonoBehaviour
         while (gameObject.activeSelf)
         {
             int i = Random.Range(0, frames.Length - 1);
-            gameObject.GetComponent<SpriteMask>().sprite = frames[i];
-            sync = i;
+            gameObject.GetComponent<SpriteMask>().sprite = frames[syncFrame(i)];
             yield return new WaitForSeconds(fps);
         }
     }
