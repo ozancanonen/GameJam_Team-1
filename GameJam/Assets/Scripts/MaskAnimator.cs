@@ -20,7 +20,6 @@ public class MaskAnimator : MonoBehaviour
             thereIsASync = true;
         else
             thereIsASync = false;
-        print(thereIsASync);
         if (randomize)
             StartCoroutine(Randomizer());
         else
@@ -29,7 +28,6 @@ public class MaskAnimator : MonoBehaviour
 
     private void OnEnable()
     {
-        print("object is enabled");
         if (randomize)
             StartCoroutine(Randomizer());
         else

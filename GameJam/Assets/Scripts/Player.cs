@@ -197,7 +197,6 @@ public class Player : MonoBehaviour
             obstructed = false;
         if (col.tag == "Altar")
         {
-            Debug.Log("altar exit");
             nearAlter = false;
         }
     }

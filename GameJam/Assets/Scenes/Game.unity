@@ -26015,7 +26015,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternLight
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7250583588972804395, guid: 6d1c5fba094987b43bf3deac85099769, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d1c5fba094987b43bf3deac85099769, type: 3}
 --- !u!1001 &6126108098502212475
 PrefabInstance:
@@ -26632,7 +26633,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5269416463697741802, guid: 6e11af7ccb289ea48a6bf53402a48a1f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6e11af7ccb289ea48a6bf53402a48a1f, type: 3}
 --- !u!4 &8505536532993111009 stripped
 Transform:
