@@ -10,7 +10,7 @@ public class MaskAnimator : MonoBehaviour
     public float hold1;
     public float hold2;
     public bool randomize;
-    public int sync;
+    protected int sync;
     public GameObject syncTarget;
     public bool thereIsASync;
 
@@ -43,13 +43,13 @@ public class MaskAnimator : MonoBehaviour
             for (int i = 0; i < frames.Length; i++)
             {
                 gameObject.GetComponent<SpriteMask>().sprite = frames[syncFrame(i)];
-                yield return new WaitForSeconds(fps);
+                yield return new WaitForSeconds(syncfps());
             }
             yield return new WaitForSeconds(hold1);
             for (int i = frames.Length - 1; i > -1; i--)
             {
                 gameObject.GetComponent<SpriteMask>().sprite = frames[syncFrame(i)];
-                yield return new WaitForSeconds(fps);
+                yield return new WaitForSeconds(syncfps());
             }
             yield return new WaitForSeconds(hold2);
         }
@@ -58,12 +58,20 @@ public class MaskAnimator : MonoBehaviour
     private int syncFrame(int currentInt)
     {
         if (thereIsASync)
-            return sync;
+            return syncTarget.GetComponent<MaskAnimator>().sync;
         else
         {
             sync = currentInt;
             return currentInt;
         }
+    }
+
+    private float syncfps()
+    {
+        if (thereIsASync)
+            return syncTarget.GetComponent<MaskAnimator>().fps;
+        else
+            return fps;
     }
 
     IEnumerator Randomizer()

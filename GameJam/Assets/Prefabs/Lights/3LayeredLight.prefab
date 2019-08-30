@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9047405911294789767}
   - component: {fileID: 8285027065616334604}
+  - component: {fileID: 6871285675547209281}
   m_Layer: 0
   m_Name: ShadowsMask (1)
   m_TagString: Untagged
@@ -79,6 +80,28 @@ SpriteMask:
   m_BackSortingOrder: 4
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
+--- !u!114 &6871285675547209281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336634097079387048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddc9cce5d98e254ab3955a3038a8bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: 8af6559f4925e3f46a3316311d919515, type: 3}
+  - {fileID: 21300000, guid: 9d11cddb58714bb4e931a06229d1d2c1, type: 3}
+  - {fileID: 21300000, guid: 8e7764790b341a3429ec1bc3a494d4d0, type: 3}
+  fps: 0
+  hold1: 0
+  hold2: 0
+  randomize: 0
+  syncTarget: {fileID: 8800605377365999374}
+  thereIsASync: 0
 --- !u!1 &7761672066801285278
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 304260888789584574}
   - component: {fileID: 5750909040304952290}
+  - component: {fileID: 8630877941335477646}
   m_Layer: 0
   m_Name: ShadowsMask
   m_TagString: Untagged
@@ -158,6 +182,28 @@ SpriteMask:
   m_BackSortingOrder: 3
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
+--- !u!114 &8630877941335477646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7761672066801285278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddc9cce5d98e254ab3955a3038a8bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: 810f20f8c1edb094c91357248d5da9a4, type: 3}
+  - {fileID: 21300000, guid: fae73acb3b83dcb488167ab55b08c25e, type: 3}
+  - {fileID: 21300000, guid: dc20d8c964db84f40a91faf09b575576, type: 3}
+  fps: 0
+  hold1: 0
+  hold2: 0
+  randomize: 0
+  syncTarget: {fileID: 8800605377365999374}
+  thereIsASync: 0
 --- !u!1 &8800605377365999374
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +215,7 @@ GameObject:
   - component: {fileID: 5100509173292974580}
   - component: {fileID: 3299013456310786938}
   - component: {fileID: 8599768423457709231}
+  - component: {fileID: 781270254574206513}
   m_Layer: 0
   m_Name: 3LayeredLight
   m_TagString: Untagged
@@ -183,7 +230,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8800605377365999374}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: -0.52389336}
   m_LocalScale: {x: 0.25000006, y: 0.25000006, z: 0.25}
   m_Children:
@@ -191,7 +238,7 @@ Transform:
   - {fileID: 304260888789584574}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.00001}
 --- !u!331 &3299013456310786938
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -256,3 +303,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.004257457}
   serializedVersion: 2
   m_Radius: 0.09126447
+--- !u!114 &781270254574206513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8800605377365999374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddc9cce5d98e254ab3955a3038a8bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: c38dcbecbd1fb0044bb81df1a0474272, type: 3}
+  - {fileID: 21300000, guid: 13d815c797a42ac41b3eb5357350f5db, type: 3}
+  - {fileID: 21300000, guid: b5f7909fc5c910b4b89e39b3e18b9516, type: 3}
+  fps: 0.2
+  hold1: 0
+  hold2: 0
+  randomize: 1
+  syncTarget: {fileID: 0}
+  thereIsASync: 0
