@@ -1,0 +1,1279 @@
+fileFormatVersion: 2
+guid: f31fc5f1002d94542a5829d8333243c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4125811100979539161
+    second: TempGroundTiles1_0
+  - first:
+      213: 1167155737643919437
+    second: TempGroundTiles1_1
+  - first:
+      213: 9208154059510266215
+    second: TempGroundTiles1_2
+  - first:
+      213: 343372844022764037
+    second: TempGroundTiles1_3
+  - first:
+      213: 5183985572966962799
+    second: TempGroundTiles1_4
+  - first:
+      213: -1540781075698283440
+    second: TempGroundTiles1_5
+  - first:
+      213: -5480701093534121754
+    second: TempGroundTiles1_6
+  - first:
+      213: -6752993682920529830
+    second: TempGroundTiles1_7
+  - first:
+      213: 512840615864750716
+    second: TempGroundTiles1_8
+  - first:
+      213: 7863805113668651793
+    second: TempGroundTiles1_9
+  - first:
+      213: 8150304943816794844
+    second: TempGroundTiles1_10
+  - first:
+      213: 702918714088916515
+    second: TempGroundTiles1_11
+  - first:
+      213: -798636290850543414
+    second: TempGroundTiles1_12
+  - first:
+      213: -1667236380331025191
+    second: TempGroundTiles1_13
+  - first:
+      213: -1032752170373913733
+    second: TempGroundTiles1_14
+  - first:
+      213: 4400873340924682515
+    second: TempGroundTiles1_15
+  - first:
+      213: -3531528299169533528
+    second: TempGroundTiles1_16
+  - first:
+      213: -4747606836384917816
+    second: TempGroundTiles1_17
+  - first:
+      213: -1542272232913546378
+    second: TempGroundTiles1_18
+  - first:
+      213: 5536362949807969177
+    second: TempGroundTiles1_19
+  - first:
+      213: -464972135108700646
+    second: TempGroundTiles1_20
+  - first:
+      213: -5249157110396660700
+    second: TempGroundTiles1_21
+  - first:
+      213: 2482382907897682607
+    second: TempGroundTiles1_22
+  - first:
+      213: 9034141684887192904
+    second: TempGroundTiles1_23
+  - first:
+      213: 4916713688453132843
+    second: TempGroundTiles1_24
+  - first:
+      213: 5936137535055529917
+    second: TempGroundTiles1_25
+  - first:
+      213: 351116876562903333
+    second: TempGroundTiles1_26
+  - first:
+      213: -6097720419123027689
+    second: TempGroundTiles1_27
+  - first:
+      213: 7156734988139475988
+    second: TempGroundTiles1_28
+  - first:
+      213: -5568244637321393647
+    second: TempGroundTiles1_29
+  - first:
+      213: -7221578793528698950
+    second: TempGroundTiles1_30
+  - first:
+      213: 5690557401111170136
+    second: TempGroundTiles1_31
+  - first:
+      213: -4918062245560515159
+    second: TempGroundTiles1_32
+  - first:
+      213: -4644549262727291438
+    second: TempGroundTiles1_33
+  - first:
+      213: 9191723067297774250
+    second: TempGroundTiles1_34
+  - first:
+      213: -6524245274058835792
+    second: TempGroundTiles1_35
+  - first:
+      213: -3633217593584794904
+    second: TempGroundTiles1_36
+  - first:
+      213: -8105891849686813811
+    second: TempGroundTiles1_37
+  - first:
+      213: -1406447212491753059
+    second: TempGroundTiles1_38
+  - first:
+      213: 8207372975457596824
+    second: TempGroundTiles1_39
+  - first:
+      213: -3389356796157982810
+    second: TempGroundTiles1_40
+  - first:
+      213: -5732994914728138757
+    second: TempGroundTiles1_41
+  - first:
+      213: -307198818296837151
+    second: TempGroundTiles1_42
+  - first:
+      213: 2778468634395120703
+    second: TempGroundTiles1_43
+  - first:
+      213: 6385404566591202363
+    second: TempGroundTiles1_44
+  - first:
+      213: -7595386957427243903
+    second: TempGroundTiles1_45
+  - first:
+      213: -4329358812552513992
+    second: TempGroundTiles1_46
+  - first:
+      213: 5998120608672925230
+    second: TempGroundTiles1_47
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TempGroundTiles1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2870d57ba868043be06dacc9ca2988
+      internalID: 4125811100979539161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff789c22589bd247ae6c83e4313c951
+      internalID: 1167155737643919437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef8c65706ae6ab44afbba545a63a1f3
+      internalID: 9208154059510266215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21cd9b380b63a3448298d4f3009e73a
+      internalID: 343372844022764037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8548a57aef2a5e547b1165ff31f6868e
+      internalID: 5183985572966962799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9f0a7e1c1a41d4e88bd96f9dc9ccbb
+      internalID: -1540781075698283440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7cd6b9676c9db449845848860ce532
+      internalID: -5480701093534121754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd361aaea7c980645a9424f01a7e0678
+      internalID: -6752993682920529830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a78e9857f41d054d920c790042c3657
+      internalID: 512840615864750716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f3ec8e90a44794f88e10f15f607a36
+      internalID: 7863805113668651793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6163870d9a58f8549b88888a9ec1859f
+      internalID: 8150304943816794844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1891126916836f047b506ee09729afe8
+      internalID: 702918714088916515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a20c1126d32ff841bec7a4808fb77cb
+      internalID: -798636290850543414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bcefcb2a806c54cbe10679f5a74e25
+      internalID: -1667236380331025191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c52df11573f741438ceb96fe63dc771
+      internalID: -1032752170373913733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_15
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae1ed832ef92914c9998bad4ad2715c
+      internalID: 4400873340924682515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b57da7f03447c54cbdb60ff239ffdcc
+      internalID: -3531528299169533528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b506a917b471a448a677ab091474b9
+      internalID: -4747606836384917816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_18
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b65b7ad1b34a448ad47a2bf4fb85f9
+      internalID: -1542272232913546378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_19
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98e224e1906f9c4db73fc0558166cc6
+      internalID: 5536362949807969177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799813cb4a60ea44ca02281a1c944f44
+      internalID: -464972135108700646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cde7c09b495ef5458ceaac2700c1240
+      internalID: -5249157110396660700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_22
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd9e8f6c85348749bf1e5b2cbcfab21
+      internalID: 2482382907897682607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_23
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc780aa6b29f25141ac207fe10988a6a
+      internalID: 9034141684887192904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f60056edaf394d4c9d2eb25a0f22e46
+      internalID: 4916713688453132843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_25
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed58e9446707dd4c9c868d36d337884
+      internalID: 5936137535055529917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_26
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5208f8da70f67214b85024b7ced69e42
+      internalID: 351116876562903333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_27
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f43e21970320446a4fc386ba1ebaff
+      internalID: -6097720419123027689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1a9a7af7179604f949d18744caa95e
+      internalID: 7156734988139475988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_29
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972c6fe1eaa752c498f1464decb2d18a
+      internalID: -5568244637321393647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_30
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dca0aeb1efa8bb41827aa88cb7aeba2
+      internalID: -7221578793528698950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_31
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcf8cdc6be9b164cbff54b1812dba3f
+      internalID: 5690557401111170136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8bcba64a0d13141a891cf7d13c71ba
+      internalID: -4918062245560515159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2a6590dc31980408dca8eee1ecdb89
+      internalID: -4644549262727291438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_34
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea8be0f23144ae4a8f2935f9f95a207
+      internalID: 9191723067297774250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_35
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df78f1bfa8c3034997e7ebcc7b83d6a
+      internalID: -6524245274058835792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_36
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f41fbf295810a349a25ddf9c2036840
+      internalID: -3633217593584794904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_37
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcff3cd24d358847b6e212c6d4a22fe
+      internalID: -8105891849686813811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_38
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bab60f34fbaa9449b3338dfb277d6b
+      internalID: -1406447212491753059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_39
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 10
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9314b454fb75683489fc15abdfa8ba95
+      internalID: 8207372975457596824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5067dbff70d8b9f4da95a7cb64e99aa4
+      internalID: -3389356796157982810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_41
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bf173f9fdb0a54e9d1f560904ac928
+      internalID: -5732994914728138757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_42
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389b1f1e68b9b7c4e8ebe809e00731df
+      internalID: -307198818296837151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_43
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1689f27ebe8c340b8128c292cfb057
+      internalID: 2778468634395120703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_44
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5905441a4abccf418d8ad0cff08aa62
+      internalID: 6385404566591202363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_45
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83541736836f224588ad694aef8b1c7
+      internalID: -7595386957427243903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_46
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed6243051fc73d44ab2e754ea00632f
+      internalID: -4329358812552513992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempGroundTiles1_47
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d81d7e6f57ae242bc7c7c7b76fa8d8
+      internalID: 5998120608672925230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
