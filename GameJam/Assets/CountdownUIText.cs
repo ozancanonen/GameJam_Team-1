@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CountdownUIText : MonoBehaviour
 {
     public Text textComp;
+    public GameObject Panel;
     void Start()
     {
         StartCoroutine(Countdown());
@@ -21,7 +22,8 @@ public class CountdownUIText : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
         gameObject.GetComponentInParent<Transform>().gameObject.SetActive(false);
-    }
+        Panel.SetActive(false);
+}
 
 
 
