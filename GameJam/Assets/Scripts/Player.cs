@@ -108,11 +108,11 @@ public class Player : MonoBehaviour
         if (movement.x == 0 && movement.y == 0 && lanternDurability < 100 && nearAlter)
         {
             lanternDurability += lanternDurabilityMagnifier * Time.deltaTime;
-            Debug.Log(lanternDurabilityBarFill.transform.localScale.x);
             lanternDurabilityBarFill.transform.localScale = new Vector3(lanternDurability / 100, lanternDurabilityBarFill.transform.localScale.y, 1);
             if (lanternDurability >= 100)
             {
                 lanternDurabilityBar.SetActive(false);
+                gm.audioManager.Play("LanternRestored");
                 playerLanternHearth.GetComponent<Animator>().SetTrigger("Unbreake");
                 //Lantern();
             }

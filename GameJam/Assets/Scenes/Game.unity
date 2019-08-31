@@ -36930,14 +36930,14 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: LanternDestroyed
     clip: {fileID: 8300000, guid: 8b6971de7a23c044f866986ad750f136, type: 3}
-    volume: 0.7
+    volume: 0.5
     pitch: 1
     priority: 0
     loop: 0
     source: {fileID: 0}
   - name: PlayerDamaged
     clip: {fileID: 8300000, guid: 65ecaca23024e0244961aef89ac9afe7, type: 3}
-    volume: 0.6
+    volume: 0.5
     pitch: 1
     priority: 0
     loop: 0
@@ -36949,9 +36949,16 @@ MonoBehaviour:
     priority: 0
     loop: 0
     source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
+  - name: LanternRestored
+    clip: {fileID: 8300000, guid: 4ce6dd9a09eff36459371849143d424e, type: 3}
+    volume: 0.4
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: FireSound
+    clip: {fileID: 8300000, guid: f894fefb851415d4f990cde9f7c58aad, type: 3}
+    volume: 0.1
     pitch: 1
     priority: 0
     loop: 0

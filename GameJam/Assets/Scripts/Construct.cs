@@ -10,7 +10,12 @@ public class Construct : MonoBehaviour
     private Vector3 direction;
     public GameObject collisionDirection;
     public GameObject bonfire;
-    
+    private GameManager gm;
+
+    private void Start()
+    {
+        gm = gameObject.GetComponentInParent<GameManager>();
+    }
     public void Move(Vector3 d, Quaternion rotation)
     {
         direction = d;
@@ -42,7 +47,10 @@ public class Construct : MonoBehaviour
                 move = false;
                 StopAllCoroutines();
                 GameObject BF = Instantiate(bonfire, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, bonfire.transform.localPosition.z), bonfire.transform.rotation);
-                Destroy(gameObject);
+                gm.audioManager.Play("FireSound");
+                StartCoroutine(gm.PauseAfter("FireSound",5f));
+                gameObject.SetActive(false);
+                //Destroy(gameObject,7f);
                 break;
         }
     }

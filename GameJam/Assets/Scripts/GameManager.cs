@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         float x = Random.Range(-20,20);//if scene sizew changes gotta change as well
         float y = Random.Range(-20, 20);
         GameObject eyes = Instantiate(eyesObject, new Vector3(x,y), Quaternion.identity);
-        Destroy(eyes,1);
+        Destroy(eyes,1.5f);
     }
 
 
@@ -65,7 +65,6 @@ public class GameManager : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
-        StartCoroutine(footStepSounds("Wood1", "Wood1", 0.4f));
     }
 
     void Pause()
@@ -73,6 +72,13 @@ public class GameManager : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
+    }
+
+    public IEnumerator PauseAfter(string name, float time)
+    {
+        yield return new WaitForSeconds(time);
+        audioManager.Pause(name);
+
     }
 
     public IEnumerator PlayerIsDeath(int player)
