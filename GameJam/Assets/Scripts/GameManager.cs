@@ -41,8 +41,8 @@ public class GameManager : MonoBehaviour
     }
     private void spawnEyes()
     {
-        float x = Random.Range(-10,10);//if scene sizew changes gotta change as well
-        float y = Random.Range(-10, 10);
+        float x = Random.Range(-20,20);//if scene sizew changes gotta change as well
+        float y = Random.Range(-20, 20);
         GameObject eyes = Instantiate(eyesObject, new Vector3(x,y), Quaternion.identity);
         Destroy(eyes,1);
     }
@@ -76,16 +76,18 @@ public class GameManager : MonoBehaviour
         gameIsPaused = true;
     }
 
-    public IEnumerator PlayerIsDeath(string playerTag)
+    public IEnumerator PlayerIsDeath(int player)
     {
+        player = player + 1;
         yield return new WaitForSeconds(2f);
-        if (playerTag == "Player1")
+        switch (player)
         {
-            Player2HasWonText.SetActive(true);
-        }
-        if (playerTag == "Player2")
-        {
-            Player1HasWonText.SetActive(true);
+            case 1:
+                Player2HasWonText.SetActive(true);
+                break;
+            case 2:
+                Player1HasWonText.SetActive(true);
+                break;
         }
         Time.timeScale = 0;
         endOfLevelMenuUI.SetActive(true);

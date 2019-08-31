@@ -175,15 +175,12 @@ public class Player : MonoBehaviour
                 inMeleeRange = true;
                 break;
             case "Wall":
+                //gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
                 obstructed = true;
                 break;
             case "Altar":
                 nearAlter = true;
                 break;
-            /*case "Bonfire":
-            case "fireCollider":
-                TakeDamage(100);
-                break;*/
         }
     }
 
@@ -407,7 +404,7 @@ public class Player : MonoBehaviour
         prefabObject.transform.parent = prefabParentObject.transform;
         anim.SetTrigger("Dead");
         StartCoroutine(gm.DestroyThisAFter(prefabObject, 1));
-        StartCoroutine(gm.PlayerIsDeath(gameObject.tag));
+        StartCoroutine(gm.PlayerIsDeath(player));
     }
 
     IEnumerator attackStateManageWithDelay(float attackStateWillBe, float afterThisMuchTime)

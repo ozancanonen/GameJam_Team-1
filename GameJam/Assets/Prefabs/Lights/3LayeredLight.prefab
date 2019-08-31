@@ -76,7 +76,7 @@ SpriteMask:
   m_BackSortingLayerID: -1309362941
   m_FrontSortingLayer: 1
   m_BackSortingLayer: 1
-  m_FrontSortingOrder: 5
+  m_FrontSortingOrder: 6
   m_BackSortingOrder: 4
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
@@ -179,7 +179,7 @@ SpriteMask:
   m_FrontSortingLayer: 1
   m_BackSortingLayer: 1
   m_FrontSortingOrder: 4
-  m_BackSortingOrder: 3
+  m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
 --- !u!114 &8630877941335477646
@@ -283,8 +283,8 @@ SpriteMask:
   m_BackSortingLayerID: -1309362941
   m_FrontSortingLayer: 1
   m_BackSortingLayer: 1
-  m_FrontSortingOrder: 6
-  m_BackSortingOrder: 5
+  m_FrontSortingOrder: 8
+  m_BackSortingOrder: 6
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
 --- !u!58 &8599768423457709231

@@ -4,19 +4,18 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - bullet
-  - player1Bullet
   - Destroyer
-  - Player1
-  - Player2
   - Melee
   - Altar
   - Construct
   - Wall
   - fireCollider
-  - Player1Bullet
-  - Player2Bullet
   - Bonfire
+  - AlterCollision
+  - Player1
+  - Undefined
+  - Bullet
+  - Player2Bullet
   layers:
   - Default
   - TransparentFX

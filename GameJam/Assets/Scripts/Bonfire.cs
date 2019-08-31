@@ -14,8 +14,7 @@ public class Bonfire : MonoBehaviour
     {
         switch(col.gameObject.tag)
         {
-            case "Player1":
-            case "Player2":
+            case "Player":
                 col.gameObject.GetComponent<Player>().Dead();
                 break;
         }

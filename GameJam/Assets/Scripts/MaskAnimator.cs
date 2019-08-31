@@ -12,7 +12,7 @@ public class MaskAnimator : MonoBehaviour
     public bool randomize;
     protected int sync;
     public GameObject syncTarget;
-    public bool thereIsASync;
+    private bool thereIsASync;
 
     void Start()
     {

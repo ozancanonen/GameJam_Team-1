@@ -34,13 +34,11 @@ public class Construct : MonoBehaviour
             case "Destroyer":
             case "Wall":
             case "Construct":
-            case "Player1":
-            case "Player2":
+            case "Player":
                 StopAllCoroutines();
                 move = false;
                 break;
-            case "Player1Bullet":
-            case "Player2Bullet":
+            case "Bullet":
             case "Bonfire":
                 move = false;
                 StopAllCoroutines();
