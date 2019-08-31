@@ -10,9 +10,10 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
         rb = gameObject.GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * bulletSpeed;
+        if (player == 1)
+            gameObject.GetComponent<SpriteRenderer>().color = Color.green;
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -25,11 +26,14 @@ public class Bullet : MonoBehaviour
                     Destroy(gameObject);
                 }
                 break;
+            case "Wall":
             case "Construct":
                 Destroy(gameObject);
                 break;
         }
     }
+
+  
 
 
 }

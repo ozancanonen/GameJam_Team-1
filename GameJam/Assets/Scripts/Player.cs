@@ -161,18 +161,29 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
 
-        if (col.gameObject.GetComponent<Player>().player != player  || col.gameObject.tag == "Construct")
+        switch (col.gameObject.tag)
         {
-            inMeleeRange = true;
-            meleeInteraction = col.attachedRigidbody;
-        }
-        if (col.tag == "Altar")
-        {
-            nearAlter = true;
-        }
-        if (col.tag == "fireCollider")
-        {
-            TakeDamage(100);
+            case "Player":
+                if (col.gameObject.GetComponent<Player>().player != player)
+                {
+                    goto case "Construct";
+                }
+                break;
+            case "Construct":
+                obstructed = true;
+                meleeInteraction = col.attachedRigidbody;
+                inMeleeRange = true;
+                break;
+            case "Wall":
+                obstructed = true;
+                break;
+            case "Altar":
+                nearAlter = true;
+                break;
+            /*case "Bonfire":
+            case "fireCollider":
+                TakeDamage(100);
+                break;*/
         }
     }
 
@@ -191,18 +202,25 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-
-        if (col.gameObject.GetComponent<Player>().player != player || col.gameObject.tag == "Construct")
+        switch(col.gameObject.tag)
         {
-            obstructed = false;
-            inMeleeRange = false;
-        }
-        if (col.tag == "Wall")
-            obstructed = false;
-        if (col.tag == "Altar")
-        {
-            nearAlter = false;
-        }
+            case "Player":
+                if (col.gameObject.GetComponent<Player>().player != player)
+                {
+                    goto case "Construct";
+                }
+                break;
+            case "Construct":
+                obstructed = false;
+                inMeleeRange = false;
+                break;
+            case "Wall":
+                obstructed = false;
+                break;
+            case "Altar":
+                nearAlter = false;
+                break;
+        }   
     }
     public void TakeDamage(int damage)
     {
