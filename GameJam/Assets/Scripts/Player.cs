@@ -462,7 +462,7 @@ public class Player : MonoBehaviour
                 eyeCounter--;
                 break;
             }
-            GameObject tempEyes = Instantiate(eyes, transform.position, eyes.transform.rotation);
+            GameObject tempEyes = Instantiate(eyes,new Vector3(transform.position.x,transform.position.y,-0.5f), eyes.transform.rotation);
             Destroy(tempEyes, 1);
             yield return new WaitForSeconds(timeBetweenEyes);
         } while (!lanternOn);

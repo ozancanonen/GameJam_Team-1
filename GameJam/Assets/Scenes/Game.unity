@@ -511,6 +511,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932091279}
     m_Modifications:
+    - target: {fileID: 381058903601447991, guid: b398c0ed520e1104e88979a4bb20dc34,
+        type: 3}
+      propertyPath: m_Name
+      value: StreetLampLookingLeft (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 381058903601447987, guid: b398c0ed520e1104e88979a4bb20dc34,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -565,11 +570,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 381058903601447991, guid: b398c0ed520e1104e88979a4bb20dc34,
-        type: 3}
-      propertyPath: m_Name
-      value: StreetLampLookingLeft (1)
       objectReference: {fileID: 0}
     - target: {fileID: 381058904012427119, guid: b398c0ed520e1104e88979a4bb20dc34,
         type: 3}
@@ -20192,6 +20192,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932091279}
     m_Modifications:
+    - target: {fileID: 381058903601447991, guid: b398c0ed520e1104e88979a4bb20dc34,
+        type: 3}
+      propertyPath: m_Name
+      value: StreetLampLookingLeft (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 381058903601447987, guid: b398c0ed520e1104e88979a4bb20dc34,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20246,11 +20251,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 381058903601447991, guid: b398c0ed520e1104e88979a4bb20dc34,
-        type: 3}
-      propertyPath: m_Name
-      value: StreetLampLookingLeft (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b398c0ed520e1104e88979a4bb20dc34, type: 3}
@@ -20511,6 +20511,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932091279}
     m_Modifications:
+    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
+        type: 3}
+      propertyPath: m_Name
+      value: StreetLampLookingRight (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3155253094805079608, guid: e9faafac3c7d03245867aec4701dd6da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20565,11 +20570,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
-        type: 3}
-      propertyPath: m_Name
-      value: StreetLampLookingRight (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9faafac3c7d03245867aec4701dd6da, type: 3}
@@ -36659,8 +36659,9 @@ MonoBehaviour:
   layer2Light: {fileID: 4235604586491000096, guid: dde0308c5949f914e9eff72b44b58960,
     type: 3}
   particleParentObject: {fileID: 569408915}
-  eyesObject: {fileID: 7458394350767881945, guid: 3721b9eee204cfd45bf1f65eb4bafe4f,
-    type: 3}
+  eyesObject:
+  - {fileID: 7458394350767881945, guid: 3721b9eee204cfd45bf1f65eb4bafe4f, type: 3}
+  - {fileID: 2627485805542924782, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61, type: 3}
   audioManager: {fileID: 519420030}
   timeBetweenEyesSpawn: 1
 --- !u!1001 &478752025
@@ -38976,7 +38977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -56.8, y: -18.4}
+  m_AnchoredPosition: {x: -56.799988, y: -18.400024}
   m_SizeDelta: {x: 113.6, y: 36.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700246066
@@ -40212,6 +40213,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932091279}
     m_Modifications:
+    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
+        type: 3}
+      propertyPath: m_Name
+      value: StreetLampLookingRight (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3155253094805079608, guid: e9faafac3c7d03245867aec4701dd6da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40266,11 +40272,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
-        type: 3}
-      propertyPath: m_Name
-      value: StreetLampLookingRight (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9faafac3c7d03245867aec4701dd6da, type: 3}
@@ -56108,6 +56109,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932091279}
     m_Modifications:
+    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
+        type: 3}
+      propertyPath: m_Name
+      value: StreetLampLookingRight (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 3155253094805079608, guid: e9faafac3c7d03245867aec4701dd6da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -56162,11 +56168,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
-        type: 3}
-      propertyPath: m_Name
-      value: StreetLampLookingRight (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9faafac3c7d03245867aec4701dd6da, type: 3}
@@ -140665,6 +140666,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932091279}
     m_Modifications:
+    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
+        type: 3}
+      propertyPath: m_Name
+      value: StreetLampLookingRight
+      objectReference: {fileID: 0}
     - target: {fileID: 3155253094805079608, guid: e9faafac3c7d03245867aec4701dd6da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -140719,11 +140725,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765036567642528255, guid: e9faafac3c7d03245867aec4701dd6da,
-        type: 3}
-      propertyPath: m_Name
-      value: StreetLampLookingRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9faafac3c7d03245867aec4701dd6da, type: 3}
@@ -143438,6 +143439,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932091279}
     m_Modifications:
+    - target: {fileID: 381058903601447991, guid: b398c0ed520e1104e88979a4bb20dc34,
+        type: 3}
+      propertyPath: m_Name
+      value: StreetLampLookingLeft
+      objectReference: {fileID: 0}
     - target: {fileID: 381058903601447987, guid: b398c0ed520e1104e88979a4bb20dc34,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -143492,11 +143498,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 381058903601447991, guid: b398c0ed520e1104e88979a4bb20dc34,
-        type: 3}
-      propertyPath: m_Name
-      value: StreetLampLookingLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b398c0ed520e1104e88979a4bb20dc34, type: 3}

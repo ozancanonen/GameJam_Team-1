@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject flameParticle;
     public GameObject layer2Light;
     public GameObject particleParentObject;
-    public GameObject eyesObject;
+    public GameObject[] eyesObject;
     public AudioManager audioManager;
     private Vector2 screenSize = new Vector2(Screen.width, Screen.height);
     private float timeCounter;
@@ -41,10 +41,12 @@ public class GameManager : MonoBehaviour
     }
     private void spawnEyes()
     {
+        int i = Random.Range(0,2);
         float x = Random.Range(-20,20);//if scene sizew changes gotta change as well
         float y = Random.Range(-20, 20);
-        GameObject eyes = Instantiate(eyesObject, new Vector3(x,y), Quaternion.identity);
-        Destroy(eyes,1.5f);
+
+        GameObject eyes = Instantiate(eyesObject[i], new Vector3(x,y,-0.5f), Quaternion.identity);
+        Destroy(eyes,0.75f);
     }
 
 
