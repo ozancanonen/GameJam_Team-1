@@ -432,7 +432,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 4
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -543,16 +543,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15cd9707ea5a39743a4bbc302ce85b66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  consoleController: 0
-  enemyBulletTag: player2Bullet
-  horizontalMovementInputButtons: Horizontal1
-  verticalMovementInputButtons: Vertical1
-  fireMovementInputButtons: FirePlayer1
-  Skill1MovementInputButtons: Skill1Player1
-  Skill2MovementInputButtons: Skill2Player1
+  player: 0
+  playerHealth: 100
+  moveSpeed: 10
+  knockback: 100
+  channelingTime: 0.2
+  timeBetweenEyes: 0
+  lanternDurabilityMagnifier: 50
+  eyes: {fileID: 0}
   prefabParentObject: {fileID: 0}
   bullet: {fileID: 4781262221777038729, guid: 320325a6343079c40bb9fdbbef9d2157, type: 3}
-  lanternObject: {fileID: 7250583588972804372}
   bulletParticles: {fileID: 998363604263136333, guid: 41ab4f6b88fe28644b20581e71134e81,
     type: 3}
   deadParticles: {fileID: 8113384502658559447, guid: c15d438490c8ed9419f27dc7610fbec9,
@@ -564,18 +564,13 @@ MonoBehaviour:
   playerLanternHearth: {fileID: 0}
   lanternDurabilityBarFill: {fileID: 5937961516559815499}
   lanternDurabilityBar: {fileID: 5937961516335110131}
-  channelingTime: 0.2
-  knockback: 100
-  moveSpeed: 10
-  playerHealth: 100
-  lanternDurabilityMagnifier: 50
-  isDizzy: 0
   HealthSliderObject: {fileID: 0}
   lanternDurabilitySlider: {fileID: 0}
   melee: {fileID: 5937961515414953097}
   firingPos: {fileID: 5937961515414953098}
   bulletSpawnPos: {fileID: 5937961515237207742}
   particleSpawnPos: {fileID: 5937961516238822229}
+  isDizzy: 0
 --- !u!50 &5937961516620328053
 Rigidbody2D:
   serializedVersion: 4
@@ -681,7 +676,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6525592609851089311}
   - component: {fileID: 7250583588972804394}
-  - component: {fileID: 7250583588972804395}
   m_Layer: 0
   m_Name: Lantern
   m_TagString: Untagged
@@ -752,20 +746,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7250583588972804395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7250583588972804372}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a20e6d2de3342a74caedbee9bdde6f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 0
-  offset: -5
 --- !u!1001 &5937961516257914687
 PrefabInstance:
   m_ObjectHideFlags: 0
