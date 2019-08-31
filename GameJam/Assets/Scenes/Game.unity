@@ -130322,6 +130322,7 @@ GameObject:
   - component: {fileID: 6664440587434238918}
   - component: {fileID: 6664440587434238919}
   - component: {fileID: 673217710}
+  - component: {fileID: 6664440587434238913}
   m_Layer: 0
   m_Name: Altar
   m_TagString: Altar
@@ -130329,6 +130330,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6664440587434238913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6664440587434238912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddc9cce5d98e254ab3955a3038a8bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: c38dcbecbd1fb0044bb81df1a0474272, type: 3}
+  - {fileID: 21300000, guid: 5ffece1f38065dd4c9f037285fc49ec9, type: 3}
+  - {fileID: 21300000, guid: cc3fd140c2bd8a64ba278ce802d92606, type: 3}
+  - {fileID: 21300000, guid: 899b72d4d00c9c94289fa33234944fbf, type: 3}
+  - {fileID: 21300000, guid: 899b72d4d00c9c94289fa33234944fbf, type: 3}
+  - {fileID: 21300000, guid: c8b3974df39d47f44b6c3c302bddda23, type: 3}
+  fps: 0.3
+  hold1: 0.2
+  hold2: 0.4
+  randomize: 0
+  syncTarget: {fileID: 0}
 --- !u!4 &6664440587434238918
 Transform:
   m_ObjectHideFlags: 0
@@ -130468,6 +130493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6664440587848903018}
   - component: {fileID: 6664440587848903017}
+  - component: {fileID: 6664440587848903020}
   m_Layer: 0
   m_Name: ShadowsMask (1)
   m_TagString: Untagged
@@ -130475,6 +130501,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6664440587848903020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6664440587848903019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddc9cce5d98e254ab3955a3038a8bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: 8af6559f4925e3f46a3316311d919515, type: 3}
+  - {fileID: 21300000, guid: a66508000cba59d4d8ba65cc0354643f, type: 3}
+  - {fileID: 21300000, guid: 09210cc1fdd9db04d87414938d804d5f, type: 3}
+  - {fileID: 21300000, guid: 9f8964d2cf7501a40a40fb15c8e63467, type: 3}
+  - {fileID: 21300000, guid: e756ef861e8518a4db9dcaefbbd7b820, type: 3}
+  - {fileID: 21300000, guid: ceb9df23767a4a64ba706c89901e2ea6, type: 3}
+  fps: 0
+  hold1: 0
+  hold2: 0
+  randomize: 0
+  syncTarget: {fileID: 6664440587434238912}
 --- !u!331 &6664440588923395205
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -130547,6 +130597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6664440588923395206}
   - component: {fileID: 6664440588923395205}
+  - component: {fileID: 6664440588923395208}
   m_Layer: 0
   m_Name: ShadowsMask
   m_TagString: Untagged
@@ -130554,6 +130605,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6664440588923395208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6664440588923395207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddc9cce5d98e254ab3955a3038a8bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: 810f20f8c1edb094c91357248d5da9a4, type: 3}
+  - {fileID: 21300000, guid: 5c9cac1ad9a6e1d40ae7cd98f36f967c, type: 3}
+  - {fileID: 21300000, guid: 0cc92e9d6b78a5e4fb3d8ce881b1ed39, type: 3}
+  - {fileID: 21300000, guid: c799750f73c3795428aa8e76977750ed, type: 3}
+  - {fileID: 21300000, guid: 6dcb36a0299250947a7e3b9d5027f94c, type: 3}
+  - {fileID: 21300000, guid: f06405959b4a826488080430f25263af, type: 3}
+  fps: 0
+  hold1: 0
+  hold2: 0
+  randomize: 0
+  syncTarget: {fileID: 6664440587434238912}
 --- !u!114 &6871285676555564405
 MonoBehaviour:
   m_ObjectHideFlags: 0
