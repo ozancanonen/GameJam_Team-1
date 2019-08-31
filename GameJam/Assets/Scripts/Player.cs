@@ -6,14 +6,22 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public int player;
+    private string[] horizontalMovementControls = new string[] { "Horizontal1Keyboard", "Horizontal2Keyboard" };
+    private string[] verticalMovementControls = new string[] { "Vertical1Keyboard", "Vertical2Keyboard" };
+    private string[] fireControls = new string[] { "FirePlayer1", "FirePlayer2" };
+    private string[] skill1Controls = new string[] { "Skill1Player1", "Skill1Player2" };
+    private string[] skill2Controls = new string[] { "Skill2Player1", "Skill2Player2" };
+
+
 
     public bool consoleController;
     public string enemyBulletTag;
-    public string horizontalMovementInputButtons;
+    /*public string horizontalMovementInputButtons;
     public string verticalMovementInputButtons;
     public string fireMovementInputButtons;
     public string Skill1MovementInputButtons;
-    public string Skill2MovementInputButtons;
+    public string Skill2MovementInputButtons;*/
 
     public GameObject prefabParentObject;
     public GameObject bullet;
@@ -68,13 +76,14 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        player = player - 1;
         lanternOn = lanternObject.activeSelf;
         canShoot = true;
         rb = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         sp = gameObject.GetComponent < SpriteRenderer>();
         gm = GetComponentInParent<GameManager>();
-        if (!consoleController&&gameObject.tag=="Player1")
+        /*if (!consoleController&&gameObject.tag=="Player1")
         {
             horizontalMovementInputButtons = "Horizontal1Keyboard";
             verticalMovementInputButtons= "Vertical1Keyboard";
@@ -83,14 +92,14 @@ public class Player : MonoBehaviour
         {
             horizontalMovementInputButtons = "Horizontal2Keyboard";
             verticalMovementInputButtons = "Vertical2Keyboard";
-        }
+        }*/
     }
 
     void Update()
     {
         if (!immobolized)
         {
-            if (Input.GetButtonDown(fireMovementInputButtons))
+            if (Input.GetButtonDown(fireControls[player]))
             {
                 if (canShoot)
                 {
@@ -98,12 +107,12 @@ public class Player : MonoBehaviour
                     anim.SetFloat("attackState",1);
                 }
             }
-            if (Input.GetButtonDown(Skill1MovementInputButtons))
+            if (Input.GetButtonDown(skill1Controls[player]))
             {
                 if (!obstructed)
                     StartCoroutine(buildConstruct(1f));
             }
-            if (Input.GetButtonDown(Skill2MovementInputButtons))
+            if (Input.GetButtonDown(skill2Controls[player]))
             {
                 Lantern();
             }
@@ -138,8 +147,8 @@ public class Player : MonoBehaviour
     //we assign these values to "movement"
     void GetCharacterInputs()
     {
-        movement.x = Input.GetAxisRaw(horizontalMovementInputButtons);
-        movement.y = Input.GetAxisRaw(verticalMovementInputButtons);
+        movement.x = Input.GetAxisRaw(horizontalMovementControls[player]);
+        movement.y = Input.GetAxisRaw(verticalMovementControls[player]);
     }
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -151,13 +160,11 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (gameObject.tag != col.gameObject.tag)
+
+        if (col.gameObject.GetComponent<Player>().player != player  || col.gameObject.tag == "Construct")
         {
-            if (col.gameObject.tag == "Player1" || col.gameObject.tag == "Player2" || col.gameObject.tag == "Construct")
-            {
-                inMeleeRange = true;
-                meleeInteraction = col.attachedRigidbody;
-            }
+            inMeleeRange = true;
+            meleeInteraction = col.attachedRigidbody;
         }
         if (col.tag == "Altar")
         {
@@ -173,8 +180,7 @@ public class Player : MonoBehaviour
     {
         switch(col.gameObject.tag)
         {
-            case "Player1":
-            case "Player2":
+            case "Player":
             case "Construct":
             case "Wall":
                 obstructed = true;
@@ -185,13 +191,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (gameObject.tag != col.gameObject.tag)
+
+        if (col.gameObject.GetComponent<Player>().player != player || col.gameObject.tag == "Construct")
         {
-            if (col.gameObject.tag == "Player1" || col.gameObject.tag == "Player2" || col.gameObject.tag == "Construct")
-            {
-                obstructed = false;
-                inMeleeRange = false;
-            }
+            obstructed = false;
+            inMeleeRange = false;
         }
         if (col.tag == "Wall")
             obstructed = false;
@@ -299,7 +303,7 @@ public class Player : MonoBehaviour
         int i = 0;
         while (waitTime > Time.fixedTime && i < 2)
         {
-            if (!Input.GetButton(fireMovementInputButtons))
+            if (!Input.GetButton(fireControls[player]))
             {
                 i++;
                 if (i < 2)
@@ -316,6 +320,7 @@ public class Player : MonoBehaviour
     }
     void Firebolt()
     {
+        bullet.GetComponent<Bullet>().player = player;
         Instantiate(bullet, bulletSpawnPos.position, firingPos.rotation);
         prefabObject = Instantiate(bulletParticles, particleSpawnPos.position, particleSpawnPos.rotation);
         prefabObject.transform.parent = prefabParentObject.transform;
@@ -326,41 +331,23 @@ public class Player : MonoBehaviour
     void Interaction ()
     {
         {
-            
-            switch (gameObject.tag)
+            switch (meleeInteraction.gameObject.tag)
             {
-                case "Player1":
-                    if (meleeInteraction.gameObject.tag == "Player2")
+                case "Player":
+                    if (meleeInteraction.gameObject.GetComponent<Player>().player != player)
                     {
-                        meleeInteraction.AddForce(ForceDirection() * knockback);
-                        StartCoroutine(meleeInteraction.gameObject.GetComponent<Player>().Immobolize(1));
-                        StartCoroutine(meleeInteraction.gameObject.GetComponent<Player>().DizzyFor(1));
-                        meleeInteraction.gameObject.GetComponent<Player>().TakeDamage(0);
-                        
-                    }
-                    if (meleeInteraction.gameObject.tag == "Construct")
-                    {
-                        moveConstruct();
-                    }
-                    break;
-                case "Player2":
-                    if (meleeInteraction.gameObject.tag == "Player1")
-                    {
-                        meleeInteraction.AddForce(ForceDirection() * knockback);
-                        StartCoroutine(meleeInteraction.gameObject.GetComponent<Player>().Immobolize(1));
-                        StartCoroutine(meleeInteraction.gameObject.GetComponent<Player>().DizzyFor(1));
-                        meleeInteraction.gameObject.GetComponent<Player>().TakeDamage(0);
-
+                    meleeInteraction.AddForce(ForceDirection() * knockback);
+                    StartCoroutine(meleeInteraction.gameObject.GetComponent<Player>().Immobolize(1));
+                    StartCoroutine(meleeInteraction.gameObject.GetComponent<Player>().DizzyFor(1));
+                    meleeInteraction.gameObject.GetComponent<Player>().TakeDamage(0);
                     }
                     meleeInteraction.AddForce(ForceDirection() * knockback);
-                    if (meleeInteraction.gameObject.tag == "Construct")
-                    {
-                        moveConstruct();
-                    }
+                    break; 
+                case "Construct":
+                    moveConstruct();
                     break;
             }
-        }
-
+        } 
     }
 
     private void moveConstruct()
@@ -430,7 +417,7 @@ public class Player : MonoBehaviour
     }
     IEnumerator Channel()
     {
-        while (Input.GetButton(fireMovementInputButtons))
+        while (Input.GetButton(fireControls[player]))
         {
             immobolized = true;
             if (channelingTimeCounter < Time.fixedTime)
