@@ -34067,6 +34067,104 @@ MonoBehaviour:
     priority: 0
     loop: 0
     source: {fileID: 0}
+  - name: FireballSpawn
+    clip: {fileID: 8300000, guid: e8b4c73070e91cb4593353c1bbd46901, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: ConstructMove
+    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
+    volume: 1
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
   - name: ConstructMove
     clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
     volume: 1

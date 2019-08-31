@@ -13,7 +13,6 @@ public class Construct : MonoBehaviour
     
     public void Move(Vector3 d, Quaternion rotation)
     {
-        print("I am moving");
         direction = d;
         collisionDirection.transform.rotation = rotation;
         if(move)
