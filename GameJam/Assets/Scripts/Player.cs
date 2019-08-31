@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
         GetCharacterInputs();
         Animate();
 
-        if (movement.x == 0 && movement.y == 0 && lanternDurability < 100)
+        if (movement.x == 0 && movement.y == 0 && lanternDurability < 100 && nearAlter)
         {
             lanternDurability += lanternDurabilityMagnifier * Time.deltaTime;
             Debug.Log(lanternDurabilityBarFill.transform.localScale.x);
