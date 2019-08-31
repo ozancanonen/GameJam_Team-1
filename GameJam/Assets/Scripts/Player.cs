@@ -120,16 +120,17 @@ public class Player : MonoBehaviour
         ProjectileRotationManager();
         GetCharacterInputs();
         Animate();
-        if (nearAlter && lanternDurability < 100)
+
+        if (movement.x == 0 && movement.y == 0 && lanternDurability < 100)
         {
             lanternDurability += lanternDurabilityMagnifier * Time.deltaTime;
             Debug.Log(lanternDurabilityBarFill.transform.localScale.x);
-            lanternDurabilityBarFill.transform.localScale = new Vector3(lanternDurability/100, lanternDurabilityBarFill.transform.localScale.y, 1);
+            lanternDurabilityBarFill.transform.localScale = new Vector3(lanternDurability / 100, lanternDurabilityBarFill.transform.localScale.y, 1);
             if (lanternDurability >= 100)
             {
                 lanternDurabilityBar.SetActive(false);
                 playerLanternHearth.GetComponent<Animator>().SetTrigger("Unbreake");
-                Lantern();
+                //Lantern();
             }
         }
     }
@@ -453,7 +454,5 @@ public class Player : MonoBehaviour
         anim.SetBool("Dizzy", true);
         yield return new WaitForSeconds(time);
         anim.SetBool("Dizzy", false);
-
     }
-
 }
