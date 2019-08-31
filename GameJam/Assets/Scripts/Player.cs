@@ -140,6 +140,7 @@ public class Player : MonoBehaviour
         if (col.gameObject.tag == "Wall")
         {
             prefabObject = Instantiate(wallBump,col.contacts[0].point, firingPos.rotation*Quaternion.Euler(1,1,-90f));
+            gm.audioManager.Play("Bump");
             Destroy(prefabObject, 0.5f);
         }
     }
@@ -208,6 +209,7 @@ public class Player : MonoBehaviour
     {
         if (lanternOn)
         {
+            gm.audioManager.Play("LanternDestroyed");
             playerLanternHearth.GetComponent<Animator>().SetTrigger("Breake");
             Lantern();
             lanterLight.SetActive(false);
@@ -223,6 +225,7 @@ public class Player : MonoBehaviour
             if (playerHealth <= 0)
             {
                 playerHearth.GetComponent<Animator>().SetTrigger("Breake");
+                gm.audioManager.Play("PlayerDamaged");
                 Dead();
             }
         }
@@ -311,6 +314,7 @@ public class Player : MonoBehaviour
                 if (i < 2)
                 {
                     StartCoroutine(attackStateManageWithDelay(0, 0.2f));
+                    gm.audioManager.Play("Melee");
                     if (inMeleeRange)
                     {
                         Interaction();
@@ -322,6 +326,7 @@ public class Player : MonoBehaviour
     }
     void Firebolt()
     {
+        gm.audioManager.Play("FireballSpawn");
         bullet.GetComponent<Bullet>().player = player;
         Instantiate(bullet, bulletSpawnPos.position, firingPos.rotation);
         prefabObject = Instantiate(bulletParticles, particleSpawnPos.position, particleSpawnPos.rotation);

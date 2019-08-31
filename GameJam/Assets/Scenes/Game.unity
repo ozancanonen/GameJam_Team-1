@@ -521,7 +521,7 @@ Transform:
   - {fileID: 6664440587434238918}
   - {fileID: 2142783521}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &117830211
 GameObject:
@@ -17916,7 +17916,7 @@ Transform:
   - {fileID: 414760003}
   - {fileID: 1611806565}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209231572
 GameObject:
@@ -18018,7 +18018,7 @@ RectTransform:
   - {fileID: 1863205633}
   - {fileID: 1156087200}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -33649,85 +33649,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1001 &468359529
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2627485805542924782, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_Name
-      value: Bump
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.984024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.597078
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5298006910896433040, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805500620348856000, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805500620348856000, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61,
-        type: 3}
-      propertyPath: m_MaskInteraction
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5caa4a13d3e2ac94f9cbf26fc01cdb61, type: 3}
 --- !u!1 &471130137
 GameObject:
   m_ObjectHideFlags: 0
@@ -33832,7 +33753,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &497842593
 GameObject:
@@ -34048,112 +33969,42 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: LanternIgnite
     clip: {fileID: 8300000, guid: 574ad21b1377d3340a3d9680480f8ba0, type: 3}
-    volume: 1
+    volume: 0.7
     pitch: 1
     priority: 0
     loop: 0
     source: {fileID: 0}
   - name: Bump
-    clip: {fileID: 8300000, guid: 327fa990560f7e842abad969f4c9be10, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: 2f3d2fd2357b74f4788f867045084f7d, type: 3}
+    volume: 0.2
     pitch: 1
     priority: 0
     loop: 0
     source: {fileID: 0}
-  - name: Construct
-    clip: {fileID: 8300000, guid: d68282a8d9f725749967f99f24dee648, type: 3}
-    volume: 1
+  - name: Melee
+    clip: {fileID: 8300000, guid: 327fa990560f7e842abad969f4c9be10, type: 3}
+    volume: 0.4
     pitch: 1
     priority: 0
     loop: 0
     source: {fileID: 0}
   - name: FireballSpawn
     clip: {fileID: 8300000, guid: e8b4c73070e91cb4593353c1bbd46901, type: 3}
-    volume: 1
+    volume: 0.3
     pitch: 1
     priority: 0
     loop: 0
     source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
+  - name: LanternDestroyed
+    clip: {fileID: 8300000, guid: 8b6971de7a23c044f866986ad750f136, type: 3}
+    volume: 0.7
     pitch: 1
     priority: 0
     loop: 0
     source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
-    pitch: 1
-    priority: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ConstructMove
-    clip: {fileID: 8300000, guid: 7b79bd72bf878a44e99c5de6a87cc6ea, type: 3}
-    volume: 1
+  - name: PlayerDamaged
+    clip: {fileID: 8300000, guid: 65ecaca23024e0244961aef89ac9afe7, type: 3}
+    volume: 0.6
     pitch: 1
     priority: 0
     loop: 0
@@ -74855,7 +74706,7 @@ Transform:
   - {fileID: 1798730954}
   - {fileID: 1032313150}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1156087199
 GameObject:
@@ -130827,7 +130678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882993799
 GameObject:

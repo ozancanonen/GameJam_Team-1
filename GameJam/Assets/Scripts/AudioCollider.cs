@@ -13,7 +13,7 @@ public class AudioCollider : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag=="Player1"|| col.tag == "Player2" || col.tag == "Construct")
+        if(col.tag=="Player"|| col.tag == "Construct")
         audioManager.Play(soundName);
     }
 }
