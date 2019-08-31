@@ -6,27 +6,27 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int player;
     private string[] horizontalMovementControls = new string[] { "Horizontal1Keyboard", "Horizontal2Keyboard" };
     private string[] verticalMovementControls = new string[] { "Vertical1Keyboard", "Vertical2Keyboard" };
     private string[] fireControls = new string[] { "FirePlayer1", "FirePlayer2" };
     private string[] skill1Controls = new string[] { "Skill1Player1", "Skill1Player2" };
     private string[] skill2Controls = new string[] { "Skill2Player1", "Skill2Player2" };
 
+    public int player;
+    public float playerHealth;
+    public float moveSpeed;
+    public float knockback;
+    public float channelingTime;
+    public float timeBetweenEyes;
+    public float lanternDurabilityMagnifier;
+    private float channelingTimeCounter;
+    private float lanternDurability = 100;
+    private float waitTime;
+    private int eyeCounter;
 
-
-    public bool consoleController;
-    public string enemyBulletTag;
-    /*public string horizontalMovementInputButtons;
-    public string verticalMovementInputButtons;
-    public string fireMovementInputButtons;
-    public string Skill1MovementInputButtons;
-    public string Skill2MovementInputButtons;*/
-
+    public GameObject eyes;
     public GameObject prefabParentObject;
     public GameObject bullet;
-    public GameObject lanterLight;
-    public GameObject lanternObject;
     public GameObject bulletParticles;
     public GameObject deadParticles;
     public GameObject wall;
@@ -35,66 +35,50 @@ public class Player : MonoBehaviour
     public GameObject playerLanternHearth;
     public GameObject lanternDurabilityBarFill;
     public GameObject lanternDurabilityBar;
-
+    private GameObject lanterLight;
+    private GameObject lanternObject;
+    private GameObject prefabObject;
+    public Slider HealthSliderObject;
+    public Slider lanternDurabilitySlider;
+    public BoxCollider2D melee;
+    public Transform firingPos;
+    public Transform bulletSpawnPos;
+    public Transform particleSpawnPos;
+    private SpriteRenderer sp;
+    private Rigidbody2D meleeInteraction;
+    private Rigidbody2D rb;
+    private Animator anim;
+    private GameManager gm;
 
     private bool obstructed;
     private bool doneChanneling;
-    public float channelingTime;
-    private float channelingTimeCounter;
-    public float knockback;
-
-    public float moveSpeed;
-    public float playerHealth;
-    public float lanternDurabilityMagnifier;
     private bool canShoot;
     private bool nearAlter;
     private bool lanternOn=false;
     private bool inMeleeRange;
     private bool immobolized = false;
-    public bool isDizzy=false;
-    //private bool isAttacking = false;
-    public Slider HealthSliderObject;
-    public Slider lanternDurabilitySlider;
-    private Vector2 movement;
-    public BoxCollider2D melee;
-    public Transform firingPos;
-    public Transform bulletSpawnPos;
-    public Transform particleSpawnPos;
-    private GameObject prefabObject;
-    private Rigidbody2D meleeInteraction;
-
-    private SpriteRenderer sp;
-    private Rigidbody2D rb;
-    private Animator anim;
-    private GameManager gm;
-
-    private float lanternDurability = 100;
-    private float waitTime;
     private bool doingInteraction;
+    public bool isDizzy=false;
+    //public bool consoleController;
+    private Vector2 movement;
 
-
-
-    void Start()
+    private void Awake()
     {
-        player = player - 1;
-        lanternOn = lanternObject.activeSelf;
-        canShoot = true;
         rb = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         sp = gameObject.GetComponent < SpriteRenderer>();
         gm = GetComponentInParent<GameManager>();
-        /*if (!consoleController&&gameObject.tag=="Player1")
-        {
-            horizontalMovementInputButtons = "Horizontal1Keyboard";
-            verticalMovementInputButtons= "Vertical1Keyboard";
-        }
-        if (!consoleController && gameObject.tag == "Player2")
-        {
-            horizontalMovementInputButtons = "Horizontal2Keyboard";
-            verticalMovementInputButtons = "Vertical2Keyboard";
-        }*/
+        lanterLight = transform.Find("LanternLight").gameObject;
+        lanternObject = transform.Find("FiringPoint/Lantern").gameObject;
     }
 
+    void Start()
+    {
+        StartCoroutine(StartGame());
+        player = player - 1;
+        lanternOn = lanternObject.activeSelf;
+        canShoot = true;
+    }
     void Update()
     {
         if (!immobolized)
@@ -248,14 +232,16 @@ public class Player : MonoBehaviour
     {
         if (lanternOn)
         {
-                lanterLight.SetActive(false);
-                lanternObject.SetActive(false);
-                lanternOn = false;
+            StartCoroutine(spawnEyes());
+            lanterLight.SetActive(false);
+            lanternObject.SetActive(false);
+            lanternOn = false;
         }
         else
         {
             if (lanternDurability >= 100)
             {
+                StopCoroutine(spawnEyes());
                 gm.audioManager.Play("LanternIgnite");
                 lanterLight.SetActive(true);
                 lanternObject.SetActive(true);
@@ -454,5 +440,27 @@ public class Player : MonoBehaviour
         anim.SetBool("Dizzy", true);
         yield return new WaitForSeconds(time);
         anim.SetBool("Dizzy", false);
+    }
+    IEnumerator StartGame()
+    {
+        StartCoroutine(Immobolize(4));
+        yield return new WaitForSeconds(3);
+        Lantern();
+    }
+    IEnumerator spawnEyes()
+    {
+        eyeCounter++;
+        do
+        {
+            if (eyeCounter > 1)
+            {
+                eyeCounter--;
+                break;
+            }
+            print("spawning eyes"+ Time.fixedTime);
+            GameObject tempEyes = Instantiate(eyes, transform.position, eyes.transform.rotation);
+            Destroy(tempEyes, 1);
+            yield return new WaitForSeconds(timeBetweenEyes);
+        } while (!lanternOn);
     }
 }

@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
     public IEnumerator footStepSounds(string sound1, string sound2, float waitingTime)
     {
         string[] currentSound = { sound1 , sound2};
-
         for (int i = 0; i <2; i++)
         {
             audioManager.Play(currentSound[i]);
