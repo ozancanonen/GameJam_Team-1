@@ -457,7 +457,6 @@ public class Player : MonoBehaviour
                 eyeCounter--;
                 break;
             }
-            print("spawning eyes"+ Time.fixedTime);
             GameObject tempEyes = Instantiate(eyes, transform.position, eyes.transform.rotation);
             Destroy(tempEyes, 1);
             yield return new WaitForSeconds(timeBetweenEyes);
